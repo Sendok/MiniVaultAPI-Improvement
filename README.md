@@ -25,8 +25,8 @@ A fully-local, production-grade REST API that simulates a core feature of ModelV
 > ⚠️ Make sure you're using **Python 3.10+**
 
 ```bash
-git clone <your-repo>
-cd minivault-api
+git clone https://github.com/Sendok/MiniVaultAPI-Improvement
+cd MiniVaultAPI-Improvement
 python3 -m venv venv
 source venv/bin/activate  # or venv\Scripts\activate on Windows
 pip install -r requirements.txt
