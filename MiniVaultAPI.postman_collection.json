@@ -1,0 +1,67 @@
+{
+    "info": {
+        "name": "MiniVaultAPI",
+        "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+    },
+    "item": [
+        {
+            "name": "Generate Text",
+            "request": {
+                "method": "POST",
+                "header": [
+                    {
+                        "key": "Content-Type",
+                        "value": "application/json",
+                        "type": "text"
+                    }
+                ],
+                "body": {
+                    "mode": "raw",
+                    "raw": "{\n    \"prompt\": \"Tell me a joke about LLMs\",\n    \"model\": \"distilgpt2\"\n}"
+                },
+                "url": {
+                    "raw": "http://localhost:8000/generate",
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "8000",
+                    "path": [
+                        "generate"
+                    ]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "Generate Stream",
+            "request": {
+                "method": "POST",
+                "header": [
+                    {
+                        "key": "Content-Type",
+                        "value": "application/json",
+                        "type": "text"
+                    }
+                ],
+                "body": {
+                    "mode": "raw",
+                    "raw": "{\n    \"prompt\": \"Once upon a time,\",\n    \"model\": \"distilgpt2\"\n}"
+                },
+                "url": {
+                    "raw": "http://localhost:8000/generate/stream",
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "8000",
+                    "path": [
+                        "generate",
+                        "stream"
+                    ]
+                }
+            },
+            "response": []
+        }
+    ]
+}
